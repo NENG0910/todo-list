@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(128, 148, 148);
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    h1{
+        color: white;
+    }
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    input,button{
+        font-size: 2rem;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+
+.sort{
+    display: flex;
+    justify-content: center;
+    button{
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: rgb(21, 44, 1);
+        color: white;
+        cursor: pointer;
+    }
+}
