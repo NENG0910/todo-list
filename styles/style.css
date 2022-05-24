@@ -86,4 +86,48 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+section {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .todo {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem 0rem;
+}
+
+section .todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+section .todo p.todo-text {
+  width: 50%;
+}
+
+section .todo p.todo-time {
+  text-align: center;
+  width: 20%;
+}
 /*# sourceMappingURL=style.css.map */

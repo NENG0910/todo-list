@@ -67,3 +67,31 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+section{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .todo{
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem 0rem;
+        
+        p{
+            background-color: white;
+            color: black;
+            padding: 0.25rem 0.5rem;
+            font-size: 1.75rem;
+        }
+        p.todo-text{
+            width: 50%;
+        }
+        p.todo-time{
+            text-align: center;
+            width: 20%;
+        }
+    }
+}
