@@ -113,6 +113,8 @@ section .todo {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.2rem 0rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 section .todo p {
@@ -129,5 +131,53 @@ section .todo p.todo-text {
 section .todo p.todo-time {
   text-align: center;
   width: 20%;
+}
+
+section .todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+section .todo button i {
+  pointer-events: none;
+}
+
+section .todo button.complete {
+  background-color: #64ff86;
+}
+
+section .todo button.trash {
+  background-color: red;
+}
+
+section .done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

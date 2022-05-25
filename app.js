@@ -18,7 +18,24 @@ add.addEventListener("click", (e) => {
   let time = document.createElement("p");
   time.classList.add("todo-time");
   time.innerText = todoMonth + "/" + todoDate;
+
+  //CDN font awesome
+  let completeButoon = document.createElement("button");
+  completeButoon.classList.add("complete");
+  completeButoon.innerHTML = '<i class="fa-solid fa-check"></i>';
+  completeButoon.addEventListener("click", (e) => {
+    let todoItem = e.target.parentElement;
+    todoItem.classList.toggle("done");
+  });
+
+  let trashButton = document.createElement("button");
+  trashButton.classList.add("trash");
+  trashButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+
   todo.appendChild(text);
   todo.appendChild(time);
+  todo.appendChild(completeButoon);
+  todo.appendChild(trashButton);
+  todo.style.animation = "scaleUp 0.3s forwards";
   section.appendChild(todo);
 });

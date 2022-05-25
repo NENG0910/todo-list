@@ -74,11 +74,13 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .todo{
         width: 30vw;
         display: flex;
         align-items: center;
         margin: 0.2rem 0rem;
+        transition: all 0.1s ease;
         
         p{
             background-color: white;
@@ -93,5 +95,38 @@ section{
             text-align: center;
             width: 20%;
         }
+        button{
+            padding: 0.25rem 0.5rem;
+            font-size: 1.75rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+            i{
+                pointer-events: none;
+            }
+        }
+        button.complete{
+            background-color: rgb(100,255,134);
+            
+        }
+        button.trash{
+            background-color: red;
+            
+        }
+        
+    }
+    .done{
+        opacity: 0.5;
+        text-decoration: line-through;
+        text-decoration-thickness:0.2rem ;
+    }
+}
+
+@keyframes scaleUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
     }
 }
