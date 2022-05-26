@@ -130,3 +130,12 @@ section{
         transform: scale(1);
     }
 }
+
+@keyframes scaleDown{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}

@@ -10,6 +10,11 @@ add.addEventListener("click", (e) => {
   let todoMonth = form.children[1].value;
   let todoDate = form.children[2].value;
 
+  if (todoText === "") {
+    alert("Please Type Input");
+    return;
+  }
+
   let todo = document.createElement("div");
   todo.classList.add("todo");
   let text = document.createElement("p");
@@ -31,6 +36,13 @@ add.addEventListener("click", (e) => {
   let trashButton = document.createElement("button");
   trashButton.classList.add("trash");
   trashButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+  trashButton.addEventListener("click", (e) => {
+    let todoItem = e.target.parentElement;
+    todoItem.addEventListener("animationend", () => {
+      todoItem.remove();
+    });
+    todoItem.style.animation = "scaleDown 0.3s forwards";
+  });
 
   todo.appendChild(text);
   todo.appendChild(time);
@@ -38,4 +50,5 @@ add.addEventListener("click", (e) => {
   todo.appendChild(trashButton);
   todo.style.animation = "scaleUp 0.3s forwards";
   section.appendChild(todo);
+  form.children[0].value = "";
 });
