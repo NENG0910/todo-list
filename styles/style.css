@@ -64,11 +64,15 @@ form button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
 }
 
 .sort button {
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.75rem;
+  padding: 0.25rem 0.5rem;
   border: none;
   background-color: #009272;
   color: white;

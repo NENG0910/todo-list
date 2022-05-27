@@ -46,9 +46,11 @@ form{
 .sort{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
     button{
-        font-size: 2rem;
-        padding: 0.5rem 1rem;
+        font-size: 1.75rem;
+        padding: 0.25rem 0.5rem;
         border: none;
         background-color: rgb(0,146,114);
         color: white;
